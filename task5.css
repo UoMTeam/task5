@@ -1,64 +1,80 @@
+/* task5.css is a file which most copied from task2.css with a little modification */
+
+
 /* defind the font for whole website */
+
 * {
     font-family: "SimHei";
 }
 
 /* css for body */
+
 body {
-    background-color:gainsboro;
+    background-color: gainsboro;
 }
+/* css for wrap */
+.wrap {
+    overflow: hidden;
+    margin: auto;
+}
+/* css for container */
+
+.container {
+    margin-right: 340px;
+    overflow: hidden;
+    height: auto;
+}
+
 /* css for articles */
-body article{
+
+body article {
     background-color: white;
-    width: 92%;
-    margin: 20px auto 0 auto;
+    margin: 20px;
     box-shadow: 1px 1px #555;
     padding: 30px;
 }
 
 /* css for navigation bar */
+
 nav {
     background-color: #555;
     overflow: hidden;
 }
-
-nav img{
+nav img {
     float: left;
     margin-left: 10px;
 }
-
-nav li:last-child a{
+nav li:last-child a {
     color: #aaa;
 }
-
-nav ul{
+nav ul {
     position: absolute;
     right: 20px;
 }
-
 nav li {
-    display:inline;
-    right:20px;
+    display: inline;
+    right: 20px;
 }
 nav li:before {
     content: "\25CF";
     font-size: 1px;
     margin-right: 5px;
 }
-
-nav li a{
+nav li a {
     color: white;
     font-size: 13px;
 }
 
 /* css for second title inside the articles */
+
 .second {
-    font-weight:lighter;
+    font-weight: lighter;
     font-size: 15px;
     color: #444;
 }
 
 /* css for author of each articles */
+
 .author {
     font-size: 12px;
     color: #aaa;
@@ -66,74 +82,84 @@ nav li a{
 }
 
 /* css for all texts of each articles */
+
 article p {
     text-indent: 34px;
     line-height: 150%;
 }
 
 /* css for the list of second articles */
+
 .unstylelist {
     list-style: none;
     line-height: 150%;
 }
+/* css for the display style of images */
+.fluido {
+    width: 100%;
+    overflow: hidden;
+}
 
 /* css for the img of third articles */
+
 .portfolio {
     text-align: center;
     width: 100px;
     height: 100px;
-    border:1px solid #aaa;
-    margin: 10px 0;
+    border: 1px solid #aaa;
+    margin: 10px;
     padding: 10px;
-    
+    float: left;
 }
-
-.portfolio img{
+.portfolio img {
     max-width: 100%;
 }
-
-.portfolio p{
+.portfolio p {
     text-indent: inherit;
     margin: auto;
     font-size: 15px;
 }
 
 /* css for the styled list in the forth article */
+
 .stylelist {
     line-height: 150%;
 }
 
 /* css for the table of forth article */
+
 .table {
     width: 100%;
-    border-collapse:collapse;
+    border-collapse: collapse;
     font-size: 12px;
 }
-
-.table table,.table th,.table td {
+.table table,
+.table th,
+.table td {
     border: 1px solid grey;
     height: 20px;
 }
-
 .table th {
     text-align: left;
     background-color: #555;
     color: white;
 }
-
 .table tr:last-child td {
     background-color: grey;
 }
-
 .table caption {
     text-align: left;
 }
 
 /* css for sidebar */
+
 aside {
+    width: 300px;
+    top: 80px;
+    height: auto;
+    right: 10px;
+    position: absolute;
     background-color: white;
-    width: 90%;
-    margin: 20px auto 20px 20px;
     box-shadow: 1px 1px #555;
     padding: 20px;
 }
@@ -146,13 +172,16 @@ aside div:first-child div {
     height: 40px;
     float: left;
     background-color: #aaa;
-    margin:auto 10px auto 0;
+    margin: auto 10px auto 0;
 }
 aside h2 {
     font-size: 15px;
 }
 .space {
     padding: 10px;
+}
+aside form {
+    text-align: center;
 }
 aside table {
     width: 100%;
@@ -164,6 +193,7 @@ aside table tr td:nth-child(1) {
 }
 aside table tr td:nth-child(2) {
     width: 60%;
+    text-align: left;
 }
 aside table textarea {
     width: 90%;
@@ -174,15 +204,16 @@ aside table textarea {
     color: grey;
 }
 .submit {
-    width: 100%;
-    border-radius: 5px;
-    background-color: blue;
+    width: 90%;
+    border-radius: 10px;
+    background-color: dodgerblue;
     color: white;
     height: 40px;
     margin-top: 10px;
 }
 
 /* css for footer */
+
 footer {
     background-color: #111;
     color: white;
@@ -191,5 +222,5 @@ footer {
     padding: 30px;
 }
 footer p {
-    margin:0 auto 10px auto;
+    margin: 0 auto 10px auto;
 }
