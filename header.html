@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+<style type="text/css">
+
+	body{
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+		font-family: "microsoft yahei";
+		min-width: 700px;
+		/*overflow: auto; */
+	}
+	
+	.header{
+		overflow: auto;
+		background-color: #333333;
+		display: table;
+		width:100%;
+	}
+
+	.header nav{
+		float: right;
+	}
+
+	.header ul{
+		margin: 0;
+	}
+
+	.header li{
+		display: inline-block;
+		margin-right: 20px;
+		line-height: 80px; 
+	}
+
+	.header li:before{
+		content: "\02022";
+	}
+
+	.header a{
+		color: white;
+		text-decoration: none;
+		margin-left: 10px;
+	}
+
+	.header span{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.container{
+		padding: 20px;
+		background-color: #c6c6c6;
+	}
+
+	.left_box{
+		/*float: left;*/
+		/*width: 50%;*/
+		margin-right: 360px;
+		/*width-min: 300px;*/
+	}
+
+	.left_inner{
+		padding: 20px;
+		background-color: white;
+		margin-bottom: 20px;
+		box-shadow: 5px 5px 5px #888888;
+	}
+
+
+
+	
+	article p{
+		text-indent: 2em;
+	}
+
+	article h1{
+		font-size: 2em;
+		font-weight: solid;
+	}
+
+	article h2{
+		font-size: 1.5em;
+		font-weight: solid;
+	}
+
+	article a{
+		color: blue;
+	}
+
+	article span{
+		color: gray;
+	}
+
+	article li{
+		list-style-type: none;
+	}
+
+	article img{
+		width: 30%;
+		min-width: 100px;
+	}
+
+	.pic_list dd{
+		width: 100px;
+		border: 1px solid black;
+		margin-bottom: 10px;
+		padding: 10px;
+		text-align: center;
+		display: inline-block;
+		/*float: left;*/
+	}
+
+	.pic_list dd img{
+		width: 100px;
+	}
+
+	.fourth_left_inner table{
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 13px;
+		border: gray;
+	}
+
+	.fourth_left_inner table caption{
+		font-size: 17px;
+		text-align: left;
+	}
+	
+	.fourth_left_inner table tr:first-child{
+		background-color: black;
+		color: white;
+	}
+
+	.fourth_left_inner table tr:last-child{
+		background-color: gray;
+		color: black;
+	}
+
+/*	.aside{
+		margin-bottom: 0;
+	}*/
+	.right_box{
+		float: right;
+	}
+
+	.right_inner{
+		width: 300px;
+		padding: 20px;
+		background-color: white;
+		margin-bottom: 20px;
+		box-shadow: 5px 5px 5px #888888;
+		font-size: 0.9em;
+	}
+
+	aside h2 {
+		border-left: 3px solid gray;
+		font-size: 2em;
+	}
+
+	aside div{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	aside label{
+		display: inline-block;
+		width: 40%;
+		text-align: right;
+	}
+
+	aside input{
+		/*display: inline-block;*/
+	}
+
+	aside span{
+		color: gray;
+		font-size: 0.8em;
+	}
+
+	aside textarea{
+		width: 45%;
+		height: 50px;
+		vertical-align: top;
+	}
+
+	.btm_sub{
+		width: 100%;
+	    background-color: #1866d5;
+	    text-align: center;
+	    line-height: 2em;
+	    font-size: 1.2em;
+	    color: white;
+	    border: 0;
+	    border-radius: 10px;
+	}
+
+	footer{
+		width: 100%;
+		text-align: center;
+		background-color: black;
+		color: white;
+		line-height: 60px;
+		font-size: 13px;
+	}
+
+</style>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<span><a class="img" href="http://www.baidu.com"><img src="logo.png" width="150"></a></span>
+		<nav>
+			<ul>
+				<li><a href="">导航链接一</a></li>
+				<li><a href="">导航链接二</a></li>
+				<li><a href="">导航链接三</a></li>
+				<li><a href="">导航链接四</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="container">
+		<!-- right box -->
+		<div class="right_box">
+			<!-- 侧栏 -->
+			<aside class="right_inner">
+				<h2>侧栏标题, 侧栏注册窗口标题</h2>
+				<form>
+					<div>
+						<label for="eml">请输入邮箱地址</label>
+						<input id="eml" name="email" type="text" placeholder="文本输入"></input>
+					</div>
+					<div>
+					<label></label>
+						<span>邮箱格式请按要求输入</span>
+					</div>
+					<div>
+						<label for="pwd">请输入密码</label>
+						<input id="pwd" name="password" type="password" placeholder="文本输入"></input>
+					</div>
+					<div>
+						<label for="rpwd">请重复输入密码</label>
+						<input id="rpwd" name="rpassword" type="password" placeholder="文本输入"></input>
+					</div>
+					<div>
+						<label></label>
+						<span>密码请为6-16位英文数字</span>
+					</div>
+					<div>
+						<label>性别</label>
+						<input type="radio" name="gender" checked>男</input>
+						<input type="radio" name="gender">女</input>
+					</div>
+					<div>
+						<label>城市</label>
+						<select name="city">
+							<option value="beijing">北京</option>
+							<option value="shanghai">上海</option>
+							<option value="shenzhen">深圳</option>
+							<option value="chongqing">重庆</option>
+							<option value="changsha">长沙</option>
+						</select>
+					</div>
+					<div>
+						<label>爱好</label>
+						<input type="checkbox" value="yundong" name="hobby">运动</input>
+						<input type="checkbox" value="yishu" name="hobby">艺术</input>
+						<input type="checkbox" value="kexue" name="hobby">科学</input>
+					</div>
+					<div>
+						<label for="discription">个人描述</label>
+						<textarea name"description"></textarea>
+					</div>
+					<div>
+						<input class="btm_sub" type="submit" value="确认提交"/>
+					</div>
+				</form>
+			</aside>
+		</div>
+			
+		<!-- left box -->
+		<div class="left_box">	
+			<article class="left_inner">
+				<h1>文章一级标题</h1>
+				<h2>文章二级标题</h2>
+				<span>Kent</span> <span>文章发表时间</span>
+				<p>
+					这是一个很长很长的段落, 这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<br/>
+				</p>
+				<P>
+					这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<br/>
+					这是一个很长很长的段落,这是一个很长很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,<b>这里有个粗体字</b>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落。
+				</P>
+				<img src="keyboard.jpg" alt="这是一个键盘" width="300px">
+				<p>
+					这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<br/>
+					这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<b>这里有个粗体字</b>这是一个很长很长的段落,这是一个很长很长的段落,<a href="http://ife.baidu.com"  target="new_tag">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落。
+				</p>		
+			</article>
+
+
+
+		<!-- 第二篇文章 -->
+			<article class="left_inner">
+				<h1>另一篇文章一级标题</h1>
+				<h2>文章二级标题</h2>
+				<span>文章作者</span> <span>文章发表时间</span>
+				<p>
+					这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<br/>
+					这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<br/>
+					这是一个很长很长的段落,这是一个很长很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,<b>这里有个粗体字</b>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落。
+				</p>
+				<img src="keyboard.jpg" alt="这是一个键盘" width="300px">
+				<ul>
+					<li>列表项目一</li>
+					<li>列表项目二</li>
+					<li>列表项目三</li>
+				</ul>
+			</article>
+		<!-- 图片 -->
+			<div class="left_inner">
+				<dl class="pic_list">
+					<dt><h1>图片</h1>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+							<dd>好看的图片<br/><img src="keyboard.jpg" alt="这是一个键盘"></dd>
+					</dt>
+				</dl>
+			</div>
+
+		<!-- 第三篇文章 -->
+			<div class="left_inner fourth_left_inner">
+				<h1>最后一篇文章一级标题</h1>
+				<h2>文章二级标题</h2>
+				<span>文章作者</span> <span>文章发表时间</span>
+				<ol>
+					<li>排名1</li>
+					<li>排名2</li>
+					<li>排名3</li>
+				</ol>
+				<table border="1">
+					<caption>这是一个表格，你们看出来了吗</caption>
+					<tr>
+						<td>表头</td>
+						<td>表头</td>
+						<td>表头</td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="">操作</a></td>
+					</tr>
+					<tr>
+						<td>总计</td>
+						<td colspan="2">1000</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<footer>版权所有©</footer>
+</body>
+</html>
